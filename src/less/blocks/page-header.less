@@ -1,3 +1,46 @@
 .page-header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		.sprite(@s-logo);
+	}
+
+	&__pin {
+		display: flex;
+		align-items: center;
+
+		&:before {
+			display: inline-block;
+			content: "";
+			.sprite(@s-pin);
+			margin-right: 12px;
+		}
+
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__support {
+		display: flex;
+		align-items: center;
+	}
+
+	&__phone {
+		display: inline-flex;
+		align-items: center;
+
+		&:before {
+			display: inline-block;
+			content: "";
+			.sprite(@s-phone);
+			margin-right: 12px;
+			margin-left: 12px;
+		}
+	}
 
 }
