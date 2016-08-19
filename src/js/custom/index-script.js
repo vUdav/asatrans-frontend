@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	app.feedbackRange = function(){
 		var el = $(".js-feedback-range");
-		el.slider({});
+		el.slider();
 	};
 
 	app.init();
