@@ -11,11 +11,12 @@ var gulp = require('gulp'),
 		rename = require('gulp-rename'),
 		browserSync = require("browser-sync"),
 		reload = browserSync.reload,
-		plumber = require('gulp-plumber');
+		plumber = require('gulp-plumber'),
+		rigger = require('gulp-rigger'),
+		flatten = require('gulp-flatten');
 
 gulp.task('js', function () {
-	var customJS = gulpFilter(config.pathTo.Src.JSCustom, {restore: true}),
-			vendorJS = gulpFilter(config.pathTo.Src.JSVendor, {restore: true});
+	var customJS = gulpFilter(config.pathTo.Src.JSCustom, {restore: true});
 
 	return gulp.src(config.pathTo.Src.JS)
 		.pipe(plumber(function(error) {
@@ -24,16 +25,13 @@ gulp.task('js', function () {
 		}))
 		// Get custom JS
 		.pipe(customJS)
+		.pipe(rigger())
 		.pipe(jshint())
 		.pipe(jshint.reporter(stylish))
-		.pipe(gulp.dest(config.pathTo.Build.JS))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
+		.pipe(flatten())
 		.pipe(gulp.dest(config.pathTo.Build.JS))
 		.pipe(customJS.restore)
-		// Get vendor JS
-		.pipe(vendorJS)
-		.pipe(gulp.dest(config.pathTo.Build.JS))
-		.pipe(vendorJS.restore)
 		.pipe(reload({stream: true}));
 });

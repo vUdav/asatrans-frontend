@@ -10,7 +10,6 @@ module.exports = {
 			PngSprite: 'src/img/sprite/**/*.png',
 			GHPages: 'dist/**/*',
 			JS: 'src/js/**/[^_]*.*',
-			JSVendor: 'src/js/vendor/**/*.js',
 			BowerJSVendor: 'src/js/vendor/',
 			BowerJSCustom: 'src/js/custom/',
 			JSCustom: 'src/js/custom/**/*.js',
@@ -59,8 +58,8 @@ module.exports = {
 			'bower_components/bootstrap/js/button.js'
 		],
 		vendorJS: [
-			'bower_components/countUp.js/dist/countUp.min.js',
-			'bower_components/owl.carousel/dist/owl.carousel.min.js'
+			'bower_components/countUp.js/dist/countUp.js',
+			'bower_components/owl.carousel/dist/owl.carousel.js'
 		]
 	},
 

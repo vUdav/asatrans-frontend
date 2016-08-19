@@ -1,3 +1,6 @@
+//= ../vendor/countUp.js
+//= ../vendor/owl.carousel.js
+
 $(document).ready(function() {
 
 	app.init = function(){

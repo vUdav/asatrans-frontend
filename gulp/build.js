@@ -15,8 +15,8 @@ gulp.task('build', function(callback) {
 		'less',
 		'txt',
 		'jade',
-		'generate-favicon',
-		'inject-favicon-markups',
-		'gh-pages',
+		// 'generate-favicon',
+		// 'inject-favicon-markups',
+		// 'gh-pages',
 		callback)
 });

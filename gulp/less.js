@@ -22,7 +22,6 @@ gulp.task('less', function () {
 		.pipe(less())
 		.pipe(autoprefixer(config.autoprefixerBrowsers))
 		.pipe(csscomb())
-		.pipe(gulp.dest(config.pathTo.Build.Styles))
 		.pipe(cssnano())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest(config.pathTo.Build.Styles))

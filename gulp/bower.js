@@ -20,7 +20,7 @@ gulp.task('bower-concatjs', function(){
 		.pipe(gulp.dest(config.pathTo.Src.BowerJSVendor))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest(config.pathTo.Src.BowerJSVendor));
+		.pipe(gulp.dest(config.pathTo.Build.JS));
 });
 
 gulp.task('bower-vendorjs', function(){
