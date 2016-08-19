@@ -1,3 +1,115 @@
 .page-footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #323536;
 
+	&__contacts {
+		color: @white;
+		width: 200px;
+		margin-right: 100px;
+		display: inline-block;
+		vertical-align: top;
+
+		.btn {
+			margin-left: 20px;
+		}
+	}
+
+	&__contacts-pin {
+		.sprite(@s-marker_mask);
+		background-color: @brand-primary;
+		display: inline-block;
+		float: left;
+	}
+
+	&__contacts-text {
+		margin-left: 20px;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+
+	&__menu {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 180px;
+		margin-right: 20px;
+		vertical-align: top;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: @white;
+			font-weight: 700;
+
+			&:hover {
+				color: @link-color;
+			}
+		}
+	}
+
+	&__socials {
+		display: inline-block;
+		float: right;
+		color: @white;
+		width: 150px;
+		vertical-align: top;
+	}
+
+	&__socials-text {
+		margin-bottom: 10px;
+	}
+
+	&__socials-item {
+		background-color: rgb(91, 93, 94);
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: @border-radius-base;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		position: relative;
+
+		&:hover {
+			background-color: darken(rgb(91, 93, 94), 20%);
+		}
+
+		&:after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		&--tw:after {
+			.sprite(@s-tw);
+		}
+		&--fb:after {
+			.sprite(@s-fb);
+		}
+		&--vk:after {
+			.sprite(@s-vk);
+		}
+		&--yt:after {
+			.sprite(@s-yt);
+		}
+		&--ok:after {
+			.sprite(@s-ok);
+		}
+		&--gp:after {
+			.sprite(@s-gp);
+		}
+	}
+
+	&__copyright {
+		border-top: 1px solid rgb(60, 63, 64);
+		margin-top: 40px;
+		padding-top: 40px;
+		color: rgb(121, 123, 123);
+	}
 }
