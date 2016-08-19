@@ -11,7 +11,7 @@ $(document).ready(function() {
 		// app.feedbackDatepicker(); // дейтпикер
 		app.feedbackRange();
 		app.abountCounter();
-
+		app.newsSlider();
 	};
 
 	app.promoSlider = function(){
@@ -57,6 +57,21 @@ $(document).ready(function() {
 		reg.start();
 		dir.start();
 		distance.start();
+	};
+
+	app.newsSlider = function(){
+		var el = $('.js-news');
+		el.owlCarousel({
+			items: 3,
+			dots: false
+		});
+
+		$('.js-news-right').click(function() {
+			el.trigger('next.owl.carousel');
+		})
+		$('.js-news-left').click(function() {
+			el.trigger('prev.owl.carousel');
+		})
 	};
 
 	app.init();

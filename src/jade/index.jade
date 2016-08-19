@@ -141,7 +141,7 @@ block content
 		.services__show-more
 			a(href="#") Показать еще
 
-	.about.container
+	.about.js-about.container
 		h2 О проекте
 		.about__img
 			img(src="img/aboutimg.jpg", alt="")
@@ -159,6 +159,43 @@ block content
 			.about__count
 				.about__count-number#js-counter-distance 23
 				.about__count-text Миллиона километра проехано
+
+	.news.container
+		h2 Новости
+		.news__wrapper
+			.news__left.js-news-left
+			.news__right.js-news-right
+			.news__items.owl-carousel.js-news
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news1.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text Трасса М5-Урал стала платной...
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news2.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text Переезды подоражали, в восточном округе...
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news3.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text У нас зарегистрировалось 125 активных партнеров...
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news1.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text Трасса М5-Урал стала платной...2
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news2.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text Переезды подоражали, в восточном округе...2
+				a.news__item(href="#")
+					div.news__item-img
+						img(src="img/pics/news3.jpg", alt="")
+					div.news__item-date 6 мая 2016
+					div.news__item-text У нас зарегистрировалось 125 активных партнеров...2
 
 block scripts
 	script(src='js/#{page}-script.min.js' defer)
