@@ -9,6 +9,22 @@ block styles
 
 block content
 
+	.promo
+		.promo__text
+			.promo__text-wrapper
+				.promo__text-dots
+					.promo__text-dot
+					.promo__text-dot
+					.promo__text-dot
+				.promo__text-slogan Экономим ваше время
+					span на поиск нужного груза или исполнителя
+				.promo__text-clock
+		.promo__slider.js-promo-slider.owl-carousel
+			.promo__slider-item(style="background-image: url('img/slider/slide1.jpg')")
+			.promo__slider-item(style="background-image: url('img/slider/slide2.jpg')")
+			.promo__slider-item(style="background-image: url('img/slider/slide3.jpg')")
+
 block scripts
 	script(src='js/vendor/countUp.min.js' defer)
+	script(src='js/vendor/owl.carousel.min.js' defer)
 	script(src='js/custom/#{page}-script.min.js' defer)

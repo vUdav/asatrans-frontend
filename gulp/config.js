@@ -4,7 +4,7 @@ module.exports = {
 	// Path settings
 	pathTo: {
 		Src: {
-			Styles: 'src/less/*.{less,css}',
+			Styles: 'src/less/[^_]*.{less,css}',
 			Jade: 'src/jade/**/[^_]*.jade',
 			Images: ['src/img/**/*.*', '!src/img/sprite/*.*', '!src/img/favicon/*.*'],
 			PngSprite: 'src/img/sprite/**/*.png',
@@ -39,7 +39,7 @@ module.exports = {
 			FaviconInject: 'dist/*.html'
 		},
 		Watch: {
-			Styles: 'src/less/**/*.less',
+			Styles: 'src/less/**/*.{less,css}',
 			Jade: 'src/jade/**/*.jade',
 			Images: ['src/img/**/*.*', '!src/img/sprite/*.*', '!src/img/favicon/*.*'],
 			PngSprite: 'src/img/sprite/**/*.png',
@@ -59,7 +59,8 @@ module.exports = {
 			'bower_components/bootstrap/js/button.js'
 		],
 		vendorJS: [
-			'bower_components/countUp.js/dist/countUp.min.js'
+			'bower_components/countUp.js/dist/countUp.min.js',
+			'bower_components/owl.carousel/dist/owl.carousel.min.js'
 		]
 	},
 

@@ -1,0 +1,54 @@
+.promo {
+	position: relative;
+
+	&__text {
+		background-color: rgba(0,0,0,.5);
+		padding: 15px 15px 15px 0;
+		width: 900px;
+		position: absolute;
+		left: 0;
+		top: 150px;
+		z-index: 10;
+	}
+
+	&__text-wrapper {
+		background-color: @white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 17px 46px 17px 54px;
+	}
+
+	&__text-dot {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: @brand-primary;
+		border-radius: 50%;
+		margin: 0 5px;
+	}
+
+	&__text-slogan {
+		color: @text-color--grey;
+		font-size: 4.8rem;
+		font-weight: 700;
+		text-align: center;
+		line-height: 1.2;
+
+		span {
+			font-size: 2.4rem;
+			display: block;
+		}
+	}
+
+	&__text-clock {
+		.sprite(@s-clock);
+	}
+
+	&__slider-item {
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+}
