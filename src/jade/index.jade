@@ -141,5 +141,24 @@ block content
 		.services__show-more
 			a(href="#") Показать еще
 
+	.about.container
+		h2 О проекте
+		.about__img
+			img(src="img/aboutimg.jpg", alt="")
+		.about__text Мы делаем рынок грузоперевозок прозрачным и эффективным.<br>Мы помогаем нашим пользователям перевезти любой груз с надежным исполнителем и по объективной цене. Наша команда верит, что рынок грузоперевозок должен опираться на открытую и честную конкуренцию, высокое качество сервиса и доступность для каждого пользователя.
+		.about__counts
+			.about__count
+				.about__count-number#js-counter-orders 1128
+				.about__count-text Заявок выполнено
+			.about__count
+				.about__count-number#js-counter-reg 180
+				.about__count-text Зарегистрированных исполнителей
+			.about__count
+				.about__count-number#js-counter-dir 1
+				.about__count-text Прекрасный директор
+			.about__count
+				.about__count-number#js-counter-distance 23
+				.about__count-text Миллиона километра проехано
+
 block scripts
 	script(src='js/#{page}-script.min.js' defer)
