@@ -16,6 +16,8 @@
   "devDependencies": {
     "bootstrap": "latest",
     "countUp.js": "^1.7.1",
-    "owl.carousel": "^2.1.6"
+    "owl.carousel": "^2.1.6",
+    "seiyria-bootstrap-slider": "^9.1.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
   }
 }

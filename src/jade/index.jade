@@ -20,9 +20,8 @@ block content
 					span на поиск нужного груза или исполнителя
 				.promo__text-clock
 		.promo__slider.js-promo-slider.owl-carousel
-			.promo__slider-item(style="background-image: url('img/slider/slide1.jpg')")
-			.promo__slider-item(style="background-image: url('img/slider/slide2.jpg')")
-			.promo__slider-item(style="background-image: url('img/slider/slide3.jpg')")
+			.promo__slider-item(style="background-image: url('img/slider/slider1.jpg')")
+			.promo__slider-item(style="background-image: url('img/slider/slider2.jpg')")
 
 	.separator
 
@@ -53,6 +52,44 @@ block content
 				a(href="#").features__step.features__step--check Вы определяетесь<br>с подходящим<br>исполнителем
 				a(href="#").features__step.features__step--fingerup Потверждаете<br>заявку
 				a(href="#").features__step.features__step--car Ждете свой груз!
+
+	.separator
+
+	.feedback
+		.feedback__wrapper.container
+			h2 Оставить заявку
+			form.feedback__form.clearfix
+				.row
+					.col-xs-3.feedback__form-field
+						label(for="feedback-from") Откуда:
+						select#feedback-from
+							option Москва
+							option Санкт-Петербург
+							option Сызрань
+					.col-xs-3.feedback__form-field
+						label(for="feedback-to") Куда:
+						select#feedback-to
+							option Москва
+							option Санкт-Петербург
+							option Сызрань
+					.col-xs-3.feedback__form-field
+						label(for="feedback-name") Название заявки:
+						input(type="text")#feedback-name
+					.col-xs-3.feedback__form-field.feedback__form-submit
+						button(type="submit").btn Далее
+				.row
+					.col-xs-3.feedback__form-field
+						label(for="feedback-distance") Расстояние:
+						input(type="number")#feedback-distance
+					.col-xs-3.feedback__form-field.js-datepicker
+						label(for="feedback-date") Выберете дату:
+						input(type="text")#feedback-date.feedback__form-input-datepicker
+						span.feedback__form-datepicker
+					.col-xs-3.feedback__form-field
+						label(for="feedback-price-range") Укажите диапазон цены:
+						input(type="text"  value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]")#feedback-price-range.js-feedback-range
+					.col-xs-3.feedback__form-field
+					.col-xs-3
 
 	.separator
 

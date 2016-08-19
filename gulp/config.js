@@ -59,7 +59,10 @@ module.exports = {
 		],
 		vendorJS: [
 			'bower_components/countUp.js/dist/countUp.js',
-			'bower_components/owl.carousel/dist/owl.carousel.js'
+			'bower_components/owl.carousel/dist/owl.carousel.js',
+			'bower_components/moment/moment.js',
+			'bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js',
+			'bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js'
 		]
 	},
 

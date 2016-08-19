@@ -1,0 +1,63 @@
+.feedback {
+	background-color: @brand-primary;
+	padding-top: 37px;
+	padding-bottom: 37px;
+
+	&__wrapper {
+		background-color: @white;
+		padding: 20px 15px 15px 15px;
+		position: relative;
+
+		h2 {
+			font-weight: 400;
+			font-size: 2.5rem;
+			position: absolute;
+			top: 4px;
+			left: 50%;
+			transform: translate(-50%);
+			width: 250px;
+			background-color: @white;
+			text-align: center;
+		}
+	}
+
+	&__form {
+		border: 1px solid #e7e8ea;
+		padding: 40px 20px 20px 20px;
+	}
+
+	&__form-field {
+		margin-bottom: 20px;
+
+		label {
+			display: block;
+			font-weight: 700;
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__form-input-datepicker {
+		min-width: 150px !important;
+		vertical-align: top;
+	}
+
+	&__form-datepicker {
+		display: inline-block;
+		.sprite(@s-calendar);
+		position: relative;
+		bottom: 2px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+
+	&__form-submit {
+		text-align: center;
+
+		.btn {
+			position: relative;
+			top: 19px;
+		}
+	}
+
+}
